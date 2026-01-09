@@ -1,0 +1,53 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net48</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Delimited Files\CommasInPrice.csv" />
+    <None Remove="Delimited Files\Empty.csv" />
+    <None Remove="Delimited Files\MalformedFirstLine.csv" />
+    <None Remove="Delimited Files\MalformedLines.csv" />
+    <None Remove="Delimited Files\NoRecords.csv" />
+    <None Remove="Delimited Files\Vehicles.csv" />
+    <None Remove="Delimited Files\vehicles.tsv" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Delimited Files\CommasInPrice.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Delimited Files\Empty.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Delimited Files\MalformedFirstLine.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Delimited Files\MalformedLines.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Delimited Files\NoRecords.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Delimited Files\Vehicles.csv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Delimited Files\vehicles.tsv">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\DelimiterSeparatedValueWrapperFramework\DelimiterSeparatedValueWrapperFramework.csproj" />
+  </ItemGroup>
+
+</Project>
