@@ -117,6 +117,12 @@ namespace DelimiterSeparatedValueWrapperFramework
         }
 
         /// <summary>
+        /// Gets a list of all column names in the file.
+        /// </summary>
+        /// <returns></returns>
+        public string[] GetColumnList() => columnLocationPairs.Keys.ToArray();
+
+        /// <summary>
         /// Checks if column exists in the file.
         /// </summary>
         /// <param name="columnName"></param>
